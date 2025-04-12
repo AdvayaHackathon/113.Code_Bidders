@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreLikeALocal - Local Tourism Guide</title>
+    <link id="light theme" rel="stylesheet" href="/landing.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- TopoJSON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=GoogleTranslateElementInit"></script>
+<script type="text/javascript">
+    function GoogleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,es,fr,de,zh-CN,ar,hi,ja,ru,pt',
+            layout: google.translate.TranslateElement.InlineLayout.DROPDOWN,
+            autoDisplay: true
+        }, 'google_translate_element');
+    }
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+</head>
+<body>'<header>
+    <h2 class="logo">ExploreLikeALocal</h2>
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="/login">Login</a>
+    </nav>
+</header>
+
+<section class="parallax">
+    <img src="/image/hill1.png" id="hill1">
+    <img src="/image/hill2.png" id="hill2">
+    <img src="/image/hill3.png" id="hill3">
+    <img src="/image/hill4.png" id="hill4">
+    <img src="/image/hill5.png" id="hill5">
+    <img src="/image/tree.png" id="tree">
+    <h2 id="text">Explore Like A Local</h2>
+    <img src="/image/leaf.png" id="leaf">
+    <img src="/image/plant.png" id="plant">
+  </section>
+  <section class="features-section">
+      <h2>How ExploreLikeALocal Helps You</h2>
+      <p class="section-subtitle">Your intelligent travel companion for authentic local experiences</p>
+      
+      <div class="features-container">
+          <!-- Smart Navigation -->
+          <div class="feature-pair">
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <i data-lucide="navigation"></i>
+                </div>
+                <h3>Experience-First Navigation</h3>
+                <p>Unlike traditional maps, we guide you through scenic paths, hidden alleys, and culturally rich spots instead of just the fastest route.</p>
+            </div>
+            <div class="feature-image">
+                <img src="/image/smart-navigation-mapi.webp" alt="Experience-First Navigation">
+            </div>
+        </div>
+        
+        <!-- Hidden Gems -->
+        <div class="feature-pair">
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <i data-lucide="map-pin"></i>
+                </div>
+                <h3>Authentic Local Spots</h3>
+                <p>Access locally curated hidden gems, from cozy cafés to breathtaking viewpoints—places where real residents hang out, not just tourists.</p>
+            </div>
+            <div class="feature-image">
+                <img src="/image/hidden-gems.jpg" alt="Authentic Local Spots">
+            </div>
+        </div>
+        
+        <!-- Personalized Travel Planner -->
+        <div class="feature-pair">
+            <div class="feature-image">
+                <img src="/image/travel-planner.jpg" alt="AI-Powered Travel Planner">
+            </div>
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <i data-lucide="calendar"></i>
+                </div>
+                <h3>AI-Powered Travel Planner</h3>
+                <p>Get smart itinerary suggestions based on your interests, real-time weather, and crowd levels—no manual searching needed.</p>
+            </div>
+        </div>
+        
+        <!-- Smart Travel Wallet -->
+        <div class="feature-pair">
+            <div class="feature-image">
+                <img src="/image/travel-wallet.avif" alt="Smart Travel Wallet">
+            </div>
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <i data-lucide="wallet"></i>
+                </div>
+                <h3>Smart Travel Wallet</h3>
+                <p>Track expenses seamlessly with automatic currency conversion and spending breakdowns linked to your itinerary.</p>
+            </div>
+        </div>
+        
+        <!-- Live Updates -->
+        <div class="feature-pair">
+            <div class="feature-image">
+                <img src="/image/live-updates.jpg" alt="Real-Time Travel Updates">
+            </div>
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <i data-lucide="alert-circle"></i>
+                </div>
+                <h3>Real-Time Travel Updates</h3>
+                <p>Get instant alerts about weather, safety, and local festivities so you can adjust plans on the go.</p>
+            </div>
+        </div>
+        
+        <!-- Integrated Translation -->
+        <div class="feature-pair">
+            <div class="feature-image">
+                <img src="/image/translation.jpg" alt="Instant Travel Translations">
+            </div>
+            <div class="feature-content">
+                <div class="feature-icon">
+                    <i data-lucide="languages"></i>
+                </div>
+                <h3>Instant Travel Translations</h3>
+                <p>Preloaded local phrases, real-time translations, and restaurant menu decoding—all integrated within your trip.</p>
+            </div>
+        </div>
+  
+          <!-- Continue the pattern for other features -->
+      </div>
+  </section>
+    <script src="./landing.js"></script>
+</body>
+</html>
